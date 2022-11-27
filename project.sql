@@ -1,4 +1,4 @@
---10. Crearea unei secven?e ce va fi utilizat? în inserarea înregistr?rilor în tabele (punctul 11).
+--10. Crearea unei secven?e ce va fi utilizat? Ã®n inserarea Ã®nregistr?rilor Ã®n tabele (punctul 11).
 
 --secventa care va ajuta in inserarea inregistrarilor in GRADINA_ZOOLOGICA
 create sequence secv_zoo
@@ -65,8 +65,8 @@ nocycle
 nocache;
 
 
---11. Crearea tabelelor în SQL ?i inserarea de date coerente în fiecare dintre acestea 
---(minimum 5 înregistr?ri în fiecare tabel neasociativ; minimum 10 înregistr?ri în tabelele asociative).
+--11. Crearea tabelelor Ã®n SQL ?i inserarea de date coerente Ã®n fiecare dintre acestea 
+--(minimum 5 Ã®nregistr?ri Ã®n fiecare tabel neasociativ; minimum 10 Ã®nregistr?ri Ã®n tabelele asociative).
 
 --entitatea PARTENER
 create table PARTENER(
@@ -6933,14 +6933,14 @@ insert into HRANESTE(id_animal,id_ang,id_hrana,data_hranire,ora_hranire,cantitat
 values(424,761,831,'16-MAY-2022',TO_DATE('16-MAY-2022 19:26','DD-MON-YYYY HH24:MI'),4);
 
 
---12.Formula?i în  limbaj  natural ?i  implementa?i 5cereri  SQL  complexece  vor  utiliza,  în ansamblul lor, urm?toarele elemente:
---•opera?ie joinpe cel pu?in 4 tabele
---•filtrare la nivel delinii
---•subcereri sincronizateîn care intervin cel pu?in 3 tabele
---•subcereri nesincronizateîn care intervin cel pu?in 3 tabele
---•grup?ri de date, func?ii grup, filtrare la nivel degrupuri
---•ordon?ri•utilizarea a cel pu?in 2 func?ii pe ?iruri de caractere, 2 func?ii pe date calendaristice, a func?iilor NVL ?i DECODE, a cel pu?in unei expresii CASE
---•utilizarea a cel pu?in 1 bloc de cerere(clauza WITH)
+--12.Formula?i Ã®n  limbaj  natural ?i  implementa?i 5cereri  SQL  complexece  vor  utiliza,  Ã®n ansamblul lor, urm?toarele elemente:
+--Â•opera?ie joinpe cel pu?in 4 tabele
+--Â•filtrare la nivel delinii
+--Â•subcereri sincronizateÃ®n care intervin cel pu?in 3 tabele
+--Â•subcereri nesincronizateÃ®n care intervin cel pu?in 3 tabele
+--Â•grup?ri de date, func?ii grup, filtrare la nivel degrupuri
+--Â•ordon?riÂ•utilizarea a cel pu?in 2 func?ii pe ?iruri de caractere, 2 func?ii pe date calendaristice, a func?iilor NVL ?i DECODE, a cel pu?in unei expresii CASE
+--Â•utilizarea a cel pu?in 1 bloc de cerere(clauza WITH)
 
 --Cererea 1
 
@@ -7086,7 +7086,7 @@ and id_zoo in (select distinct gz.id_zoo     --gradinile zoologice ce au tranzac
                and months_between(sysdate,data_serviciu)<60);
 
 
---13.Implementarea a 3 opera?ii de actualizare ?ide suprimare a datelor utilizând subcereri.
+--13.Implementarea a 3 opera?ii de actualizare ?ide suprimare a datelor utilizÃ¢nd subcereri.
 
 --Actualizare
 --Sa se mareasca salariile ingrijitorilor de animale cu 10% in gradinile zoologice unde
@@ -7147,7 +7147,7 @@ rollback; --pentru a reveni la valorile de dinainte de actualizare
 commit; --daca vrem sa permanentizam modificarile
 
 
---16.Formula?i în limbaj natural ?i implementa?i în SQL: o cerere ce utilizeaz? opera?ia outer-join pe minimum 4 tabele ?i dou? cereri ce utilizeaz? opera?ia division.
+--16.Formula?i Ã®n limbaj natural ?i implementa?i Ã®n SQL: o cerere ce utilizeaz? opera?ia outer-join pe minimum 4 tabele ?i dou? cereri ce utilizeaz? opera?ia division.
 
 --Cerere Outer Join
 --Sa se afiseze pentru fiecare gradina zoologica, posibilitatile de tranzactionare cu parteneri pe care
